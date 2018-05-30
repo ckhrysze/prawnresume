@@ -6,10 +6,10 @@ information = {
     extra_info: %w(773.357.5655 christopher@chrishildebrand.net)
   },
   skills: {
-    languages: %w(Python Ruby Elixir Javascript Go PHP C# Elm),
-    frameworks: %w(Rails Django Phoenix Sinatra Flask Vue ReactNative),
+    languages: %w(Elixir Python Ruby Javascript Go Elm C# PHP),
+    frameworks: %w(Vue Phoenix Terraform Django Rails Sinatra Flask),
     systems: %w(AWS Docker Ubuntu OSX Windows),
-    databases: %w(Postgresql MongoDB Couchbase Mysql Redis)
+    databases: %w(Postgresql MongoDB Couchbase)
   },
   experience: {
     label: "Experience",
