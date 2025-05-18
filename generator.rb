@@ -24,29 +24,31 @@ information = {
           title: "Senior Director of Product Reliability  @  Versus Systems",
           duration: "Jun 2018 - present",
           points: [
-            "- Designed and implemented deployment strategy for multiple products",
-            "- Managed QA and Devops teams as well as several engineers",
-            "- Worked with executive team on product roadmap and company culture",
-            "- Designed and built the data pipeline for several applications"
-          ]
-        },
-        {
-          title: "Freelance Elixir Developer  @  multiple clients",
-          duration: "~ 5 years",
-          points: [
-            "- Migrated games using different services into a single platform",
-            "- Added automatic language detection and internationalization support",
-            "- Built financial portfolio app that tracked stocks and crypto assets",
-            "- Transformed large pdf document into many searchable sections"
+            "- Created and maintained infrastructure for seven Elixir applications",
+            "- Designed and built the data and analytics pipeline for four products",
+            "- Reduced hosting costs by over 60% while increasing uptime",
+            "- Managed and mentored developers, QA team and Devops team",
+            "- Worked with executive team on product roadmap and company culture"
           ]
         },
         {
           title: "Director of Engineering  @  Advanced Health Communications",
           duration: "Dec 2016 - Jun 2018",
           points: [
-            "- Led team responsible for design, development and deployment",
-            "- Worked with owners to create the company's product roadmap",
-            "- Architected and implemented message search and routing algorithms"
+            "- Managed the company software engineering team",
+            "- Worked directly with owners to create the product roadmap",
+            "- Led effort to migrate database from MongoDB to PostgreSQL",
+            "- Architected and implemented HL7 parsing, search and routing algorithms"
+          ]
+        },
+        {
+          title: "Freelance Elixir Developer  @  multiple clients",
+          duration: "~ 6 years",
+          points: [
+            "- Migrated discrete game theory simulations into a single platform",
+            "- Added automatic language detection and internationalization support",
+            "- Built financial portfolio app that tracked stocks and crypto assets",
+            "- Transformed large pdf catalog into searchable topic summaries"
           ]
         },
         {
@@ -58,15 +60,6 @@ information = {
             "- Supervised team creating a new game engine",
             "- Developed product features and built AWS architecture",
             "- Coordinated tasks between local and remote teams"
-          ]
-        },
-        {
-          title: "Software Consultant  @  Iron Ninja Technologies",
-          duration: "6 week contract Jun 2016 - Jul 2016",
-          points: [
-            "- Designed and deployed all aspects of server architecture",
-            "- Led team creating the product API and underlying model structure",
-            "- Built robust data generation tool for integration testing",
           ]
         }
       ]
@@ -126,10 +119,8 @@ end
 def write_skills(skills)
   sub_section_gap = 5
 
+  text("Skills")
   skills.each_with_index do |(section, values), index|
-    font_size(10) {
-      text(section.to_s.capitalize)
-    }
     top = bounds.top - ((sub_section_gap + font_size) * index)
     bounding_box([CONTENT_X, top], width: CONTENT_WIDTH) do
       font_size(10) {
@@ -141,7 +132,7 @@ def write_skills(skills)
 end
 
 def write_experience(experience)
-  sub_section_gap = 18
+  sub_section_gap = 21
   text(experience[:label])
 
   bounding_box([CONTENT_X, bounds.top], width: CONTENT_WIDTH) do
@@ -152,10 +143,10 @@ def write_experience(experience)
       text(position[:title], title_opts)
       move_down 2
       text(position[:duration], date_opts)
-      move_down 2
+      move_down 4
       position[:points].each { |point|
         text(point, size: 12)
-        move_down 1
+        move_down 2
       }
       move_down sub_section_gap
     end
