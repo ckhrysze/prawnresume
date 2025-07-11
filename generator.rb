@@ -21,8 +21,18 @@ information = {
       label: "Experience",
       positions: [
         {
+          title: "Senior Software Engineer  @  Ockam",
+          duration: "Nov 2023 - Present",
+          points: [
+            "- Created pooling solution for dynamically allocated K8S pods",
+            "- Added payment system via Stripe or AWS Marketplace",
+            "- Built customer facing portal to onboard new accounts",
+            "- Developed an agentic platform to host large scale AI applications"
+          ]
+        },
+        {
           title: "Senior Director of Product Reliability  @  Versus Systems",
-          duration: "Jun 2018 - present",
+          duration: "Jun 2018 - Nov 2023",
           points: [
             "- Created and maintained infrastructure for seven Elixir applications",
             "- Designed and built the data and analytics pipeline for four products",
@@ -43,14 +53,20 @@ information = {
         },
         {
           title: "Freelance Elixir Developer  @  multiple clients",
-          duration: "~ 6 years",
+          duration: "~ 8 years",
           points: [
+            "- Implemented auth system spanning multiple microservices",
             "- Migrated discrete game theory simulations into a single platform",
             "- Added automatic language detection and internationalization support",
             "- Built financial portfolio app that tracked stocks and crypto assets",
             "- Transformed large pdf catalog into searchable topic summaries"
           ]
-        },
+        }
+      ]
+    },
+    page_two: {
+      label: "Experience (cont)",
+      positions: [
         {
           title: "Lead Software Engineer  @  Scientific Games Corporation",
           duration: "Jan 2013 - Nov 2016",
@@ -61,12 +77,7 @@ information = {
             "- Developed product features and built AWS architecture",
             "- Coordinated tasks between local and remote teams"
           ]
-        }
-      ]
-    },
-    page_two: {
-      label: "Experience (cont)",
-      positions: [
+        },
         {
           title: "Software Engineer  @  Trustwave Holdings",
           duration: "May 2011 - Jan 2013",
